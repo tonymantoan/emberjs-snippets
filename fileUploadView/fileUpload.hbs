@@ -1,0 +1,7 @@
+{{!-- put something like this in you template, assuming the active controller is the one to handle file uploads --}}
+{{view "file-upload" vController=this value=fileData data-elmId=fileId}}
+
+{{!-- for multiple files: --}}
+{{#each files itemController='fileUpload'}}
+  {{view "file-upload" vController=this value=fileData data-elmId=fileId}}
+{{/each}}
