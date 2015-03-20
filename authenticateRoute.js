@@ -1,7 +1,7 @@
 /**
-* This a mixin for routes that only authenticated users have permission to see.
+* This is a mixin for routes that only authenticated users should see.
 * Just include this mixin when creating any route that requires authentication.
-* Change the transitionTo call to whatever route has your login form
+* Change the transitionTo call to whatever route has your login form.
 */
 App.verifyLoginMixin = Ember.Mixin.create({
   beforeModel: function(){
